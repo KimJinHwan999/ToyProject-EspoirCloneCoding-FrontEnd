@@ -1,0 +1,133 @@
+*{
+    font-family: 'Noto Sans KR', "돋움", Dotum, sans-serif;
+    font-weight: bold;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;    
+}
+
+.header{
+    text-align: center;
+    color: black;
+    margin: 20px auto;
+}
+
+.header button{
+    float: right;
+    width: 5px;
+}
+
+.header img{
+    width: 25px;
+}
+
+.login_guide_text{
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 50px auto;
+}
+
+.login_guide_text span{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.userid_box {
+
+    width: 100%;
+    height: 50px;
+    margin: 10px auto;
+    padding: 10px;
+    color: gray;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.userpw_box {
+
+    width: 100%;
+    height: 50px;
+    margin: 10px auto;
+    padding: 10px;
+    color: gray;
+    border-radius: 5px;
+    border: 1px solid gray;
+    
+}
+
+.saveid .saveid_ckbox{
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid gray;
+    transition: background 0.2s;
+    content: "v";
+    cursor: pointer;
+}
+
+.saveid .saveid_ckbox:checked{
+    background-color: #5c95f0;
+    border: none;
+    cursor: pointer;
+}
+
+.saveid span{
+    position: relative;
+    top: -3px;
+    cursor: pointer;
+}
+
+.login_btn{
+    text-align: center;
+    border-radius: 5px;
+    background-color: #5c95f0;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+.login_btn button{
+    margin: 20px auto;
+    color: white;
+}
+
+.login_guide_btn{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 40px;
+}
+
+.login_guide_btn a{
+    margin: 0 40px;
+}
+
+.login_guide_btn img{
+    width: 50px;
+    margin: 10px auto; 
+}
+
+.find_info{
+    margin: 30px auto;
+    text-align: center;
+    color: gray;
+}
+
+.footer{
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 30px;
+    margin: 40px 20px;
+}
+
+.footer span:nth-child(2){
+    float: right;
+}

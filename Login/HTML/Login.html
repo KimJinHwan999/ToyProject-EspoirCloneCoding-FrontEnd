@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>espoir</title>
+    <link rel="stylesheet" href="../CSS/commom_style.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+    
+    
+    <div id="wrap" class="wrap">
+        
+  
+        <!-- container -->
+        <div class="container">
+
+            <!-- header -->
+            <header class="header">
+                <div class="headerBox">
+                    <div class="inner">
+                        <h1 class="page_tit">로그인</h1>
+                        <a href="http://jhk684.dothome.co.kr/programming/Main/HTML/main_pg.html"><button type="button" class="btn_page_close"><img src="../image/btn_title_close.png"></button></a>
+                    </div>
+                </div>
+            </header>
+            <!-- //header -->
+            <hr>
+            
+            <div class="login_guide_text">
+                <span>아모레퍼시픽 뷰티포인트 통합회원<br>아이디로 로그인해주세요.</span>
+            </div>
+            <form id='login_form'  method="post">
+                <div id="userid" class="userid">
+                    <input type="text" id="userid_box" class="userid_box" placeholder="아이디 입력">
+                </div>
+                <div id="userpw" class="userpw">
+                    <input type="password" id="userpw_box" class="userpw_box" placeholder="비밀번호 입력 (영문, 숫자, 특수문자 조합)">
+                </div>
+                <div id="saveid" class="saveid">
+                    <input type="checkbox" id="saveid_ckbox" class="saveid_ckbox" value="아이디 저장">
+                    <label for="saveid_ckbox">
+                        <span>아이디 저장</span>
+                    </label>
+                </div>
+                <div id="login_btn" class="login_btn">
+                    <button type="submit">로그인</button>
+                </div>
+            </form>
+            
+            <hr>
+
+            <div id="login_guide_btn" class="login_guide_btn">
+                <a href="#">
+                    <div><img src="../image/btn_login_mobile.png" alt="휴대폰 로그인"></div>
+                    <span>휴대폰<br>로그인</span>
+                </a>
+                <a href="#">
+                    <div><img src="../image/btn_login_ka.png" alt="휴대폰 로그인"></div>
+                    <span>카카오<br>로그인</span>
+                </a>
+                <a href="#">
+                    <div><img src="../image/btn_login_na.png" alt="휴대폰 로그인"></div>
+                    <span>네이버<br>로그인</span>
+                </a>
+                <a href="#">
+                    <div><img src="../image/btn_login_more.png" alt="휴대폰 로그인"></div>
+                    <span>더보기<br>로그인</span>
+                </a>
+            </div>
+            
+            <hr>
+
+            <div id="find" class="find_info">
+                <span><a href="#">아이디 찾기</a></span>
+                <span>|</span>
+                <span><a href="#">비밀번호 찾기</a></span>
+                <span>|</span>
+                <span><a href="#">비회원 주문/조회</a></span>
+            </div>
+
+            <div id="sign_up" class="footer">
+                <span>아직 회원이 아니세요?</span>
+                <span><a href="#">회원가입 ></a></span>
+            </div>
+        </div>
+    </div>
+        
+            
+
+
+
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/login.js"></script>
+    
+</body>
+</html>

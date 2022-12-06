@@ -1,0 +1,198 @@
+/* ---------header 시작 -------------*/
+    /* 와이드 헤더 시작 */
+
+    .clearfix {
+        display: block;
+        min-height: 1px;
+    }
+
+    .clearfix::after {
+        clear: both;
+        display: block;
+        content: "";
+        height: 0;
+        visibility: hidden;
+    }
+
+    .espoir_header {
+        z-index: 20;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .header_top {
+        background: transparent;
+        height: 100px;
+        width: 100%;
+    }
+
+    .header_topInner{
+        position: relative;
+        height: 100px;
+        margin: 0 auto;
+        padding: 0px 50px;
+        transition: all 0.3s ease;
+    }
+
+    .header_logo{
+        background: url("../images/logo_b.png");
+        float: left;
+        display: block;
+        width: 116px;
+        height: 44px;
+        margin-top: 28px;
+    }
+
+    .header_top_box{
+        float: right;
+        margin-right: -14px;
+        width: auto;
+    }
+
+    .header_toplist{
+        padding: 14px 0 10px;
+    }
+
+    .espoir_header .header_top_box .header_toplist li {
+        display: inline-block;
+    }
+
+    .header_toplist > li > a{
+        display: block;
+        padding: 4px 14px;
+        font-size: 12px;
+    }
+
+    .header_btlist{
+        position: relative;
+        padding-left: 28px;
+    }
+
+    .header_btlist > li{
+        position: relative;
+        display: inline-block;
+        height: 41px;
+        margin: 0px 7px;
+        padding: 8px;
+        width: auto;
+        border: 0;
+    }
+
+    .box_search > a{
+        background: url("../images/btn_sch.png") no-repeat 0 100%;
+        display: block;
+        width: 22px;
+        height: 25px;
+    }
+
+    .btn_bsk > a {
+        background: url("../images/btn_bsk.png") no-repeat 0 0;
+        position: relative;
+        width: 20px;
+        height: 25px;
+        display: block;
+    }
+
+    .btn_bsk > a:after {
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        position: absolute;
+        right: -8px;
+        top: -8px;
+        background: #000;
+    }
+
+    .header_bottom{
+        position: relative;
+        width: 100%;
+        z-index: 10;
+        background: transparent;
+    }
+
+    .header_bottomInner{
+        position: relative;
+        margin: 0 auto;
+        padding: 0px 50px;
+        height: 36px;
+        transition: all 0.3s ease;
+    }
+
+    .espoir_header .header_bottom .btn_nav_open {
+        position: relative;
+        display: inline-block;
+        height: 36px;
+        padding-right: 14px;
+        font-family: 'Marian', sans-serif;
+        font-size: 24px;
+        color: #000;
+        line-height: 36px;
+        cursor: pointer;
+    }
+
+    .btn_nav_open::after{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        content: "";
+        width: 14px;
+        height: 100%;
+        background: url("../images/arr_go.png") no-repeat 100% 50%;
+    }
+
+
+    /*-------------사이드바 시작----------------*/
+    nav{
+        font-family: 'marian', sans-serif;
+        font-size: 200%;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        z-index: 30;
+        height: 100vh;
+        width: 400px;
+        overflow: scroll;
+        box-shadow: 5px 5px 5px gray;
+        display: none;
+    }
+
+    nav::-webkit-scrollbar{
+        display: none;
+    }
+
+    nav .nav_inner{
+        margin-left: 50px;
+        
+    }
+
+    nav .nav_header .header_logo{
+        width: 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 40px;
+    }
+
+    nav .nav_list .menu{
+        margin: 25px 0;
+    }
+
+    nav .nav_list .menu > a{
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+    }
+
+    nav .nav_list .menu .depth2 a{
+        font-weight: normal;
+        font-size: 20px;
+        color: gray;
+    }
+    /*-------------사이드바 끝----------------*/
+
+    
+    /* 와이드 헤더 끝 */
+    /* 헤더 끝 */

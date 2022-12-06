@@ -1,0 +1,624 @@
+
+
+    
+
+    /* 컨테이너 시작 */
+
+    
+    /* 메인 프로모 시작 */
+
+    .promo_slide{
+        background-image: url(../images/banner_2.jpg);
+    }
+
+    #main_promition a{
+        position: relative;
+    }
+
+    #main_promotion img{
+        height: 100%;
+        
+    }
+
+    #main_promotion .text_box{
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        top: 520px;
+        left: 80px;
+    }
+
+    #main_promotion .text_box p:nth-child(1){
+        margin: 10px 0;
+    }
+
+    #main_promotion .text_box p:nth-child(2){
+        font-weight: bold;
+        font-size: 50px;
+        margin: 10px 0;
+    }
+
+    #main_promotion .text_box p:nth-child(3){
+        margin: 10px 0;
+    }
+
+    #main_promotion .text_box div div{
+        display: inline-block;     
+        font-size: 15px;
+        border: 1px solid white;   
+        margin: 10px 0;
+        padding: 5px 10px;        
+    }
+
+    #main_promotion .promo_slide{
+        height: 880px;
+    }
+
+    #main_promition .promo_slide img{
+        max-width: 100%;
+    }
+    /* 메인 프로모 끝 */
+
+
+    
+    /* 뉴 룩북 시작 */
+    .new_lookbook {
+        
+        overflow:hidden;
+        
+    }
+    
+    .new_lookbook img {
+        width:100%;
+        max-width:100%;
+        height:auto;
+    }
+    
+    .new_lookbook .lb_type {
+        position:relative;
+        padding:92px 0;
+    }
+
+    
+    .new_lookbook .lb_inner {
+        position:relative;
+        width:100%;
+        max-width:1440px;
+        margin:0 auto;
+        padding:0 100px;
+    }
+
+    .new_lookbook .lb_tit {
+        font-weight:700;
+        font-family:'Marian', sans-serif;
+        font-size:120px;
+        line-height:1;
+        color:inherit;
+        letter-spacing:-0.02em;
+    }
+
+    .new_lookbook .lb_subtit {
+        position: relative;
+        font-family:'yoon',sans-serif;
+        font-size:20px;
+        color:inherit;
+    }
+
+    .lb_type .imgbox {
+        display:block;
+        overflow:hidden;
+    }
+
+    .lb_type .imgbox img {
+        vertical-align:top;
+        transition:.8s ease-out;transform:translate3d(0,0,0);
+        transform-origin:50% 20%;
+        cursor:pointer;
+    }
+
+    
+
+    .new_lookbook .lb_tit .letter {
+        display:inline-block;
+        line-height:0.83em;
+    }
+
+    
+    .lb_type .descbox {
+        word-break:keep-all;
+    }
+    
+    /* lb select box (button)*/
+
+    .lb_selectBox button {
+        width: 30px;
+        height: 30px;
+        display: block;
+        overflow: hidden;
+        text-indent: -9999px;
+        /* background: url(../images/Main/lb_off.png) no-repeat center center; */
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+    }
+
+    .new_lookbook .imgbox .lb_selectBox {
+        opacity:0;
+        transform:scale(0);
+        perspective-origin:center center;
+    }
+
+    .new_lookbook .imgbox:hover .lb_selectBox, 
+    .new_lookbook .imgbox:focus .lb_selectBox,
+    .new_lookbook .imgbox:active .lb_selectBox {
+        opacity:1;
+        transform:scale(1);
+    }
+
+    .new_lookbook .lb_selectBox {
+        width:27px;
+        height:27px;
+        margin:-13px 0 0 -13px;
+        padding:0;
+        transition:all 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+    }
+
+    .new_lookbook .lb_selectBox .btn_open_lbpop {
+        position: relative;
+        left: 300px;
+        top:-200px;
+        width:100%;
+        height:100%;
+        padding:0;
+        border-radius:50%;
+        cursor:pointer;
+        background:#fff url("../images/lb_plus.png") no-repeat 50% 50%;
+    }
+
+    
+
+
+    
+    /* lb_prd popup style --------- */
+
+    .modal_lb_prd {
+        display:flex;
+        align-items:center;
+        position:fixed;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        z-index:10001;
+        background:rgba(0,0,0,0.25);
+    }
+
+    .modal_lb_prd .modal-content {
+        position:relative;
+        width:380px;
+        height:auto;
+        margin:0 auto;
+        border-radius:20px;
+        background:#fff;
+        overflow:hidden;
+        box-shadow:-1px 0 27px rgba(0,0,0,0.34);
+        margin-top:0 !important;
+    }
+
+    .modal_lb_prd .thumb {
+        height:386px;
+        background:#f7f7f7;
+        text-align:center;
+    }
+    .new_lookbook .lb_type .modal_lb_prd .thumb img {
+        width:auto;
+        height:100%;
+        max-height:100%;
+    }
+    .modal_lb_prd .lb_prd_info {
+        position:relative;
+        height:auto;
+        padding:20px 26px 56px;
+        color:#000;
+    }
+    .modal_lb_prd .lb_prd_info * {
+        letter-spacing:-0.02em;
+    }
+    .modal_lb_prd .lb_prd_info .prd_ctg {
+        font-weight:700;
+        margin-bottom:6px;
+        font-size:16px;
+    }
+    .modal_lb_prd .lb_prd_info .prd_name {
+        min-height:3.9em;
+        max-height:3.9em;
+        font-weight:700;
+        font-size:21px;
+        line-height:1.3;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        display:block;
+        display:-webkit-box;
+        -webkit-box-orient:vertical;
+        -webkit-line-clamp:3;
+    }
+
+    .modal_lb_prd .btnbox {
+        z-index:5;
+        position:absolute;
+        bottom:20px;
+        left:0;
+        width:100%;
+        padding:6px 26px;
+    }
+
+    .modal_lb_prd .go_prd_detail {
+        position:relative;
+        display:inline-block;
+        font-weight:700;
+        font-size:16px;
+        color:#000;
+        text-decoration:underline;
+        line-height:24px;
+    }
+
+    .modal_lb_prd .go_prd_detail:after {
+        position:absolute;
+        right:-13px;top:0;content:"";display:block;width:14px;height:100%;
+        background:url(../images/arr_go.png) no-repeat 100% 4px;
+    }
+
+    .modal_lb_prd .modal_popup_close {
+        left:auto;
+        right:20px;
+        top:20px;
+        width:720px;
+        height:15px;
+        background:url(../images/btn_close_lbpop.png) no-repeat center center;
+    }
+    
+    /* look book type style --------- */
+    
+    /* lookbook type 01*/
+    .lb_type_01 .lb_inner {
+        width:100%;
+        max-width:1700px;
+        margin:0 auto;
+        padding:14.29% 230px 0;
+    }
+
+    .lb_type_01 .lb_inner .box_wrap {
+        position:relative;
+        padding-bottom:calc(( 1342 / 1240 ) * 100%);
+    }
+
+    .lb_type_01 .descbox {
+        z-index:5;
+        position:absolute;
+        left:0;
+        right:25%;
+        top:0;
+        padding-left:108px;
+        font-size:180px;
+    }
+
+    
+    .lb_type_01 .lb_tit {
+        font-size:180px;
+        line-height:0.83em;
+    }
+
+    .lb_type_01 .imgbox_01 {
+        position:absolute;
+        left:0;
+        top:0;
+    }
+
+    .lb_type_01 .imgbox_02 {
+        position:absolute;
+        right:20px;
+        top:20px;
+        transform-origin:100% 0;
+    }
+
+    .lb_type_01 .imgbox_03 {
+        position:absolute;
+        right:0;
+        bottom:0;
+        width:470px;
+    }
+
+    .lb_type_01 .imgbox_03 img {
+        transform-origin:50% 50px;
+        transition:all 0.6s ease-in;
+    }
+
+    
+    /* lookbook type 02*/
+    .lb_type_02 .lb_inner {
+        padding:105px 120px 66px;
+    }
+
+    .lb_type_02 .imgbox_wrap {
+        position:relative;
+        padding-bottom:76.667%;
+    }
+
+    .lb_type_02 .imgbox_01 {
+        position:absolute;
+        left:0;
+        top:0;
+        width:50%;
+        transform-origin:100% 0;
+    }
+
+    .lb_type_02 .imgbox_02 {
+        position:absolute;
+        right:0;
+        bottom:0;
+        width:50%;
+        transform-origin:0 0;
+    }
+
+    .lb_type_02 .descbox {
+        z-index:5;
+        position:absolute;
+        text-align:center;
+        color: rgb(211, 16, 22);
+    }
+
+    .lb_type_02 .descbox.descbox_01 {
+        top:0;
+        right:0;
+        text-align:right;
+    }
+    
+
+    .lb_type_02 .descbox.descbox_02 {
+        bottom:0;
+        left:0;
+        text-align:left;
+    }
+
+    .lb_type_02 .descbox .lb_tit {
+        font-size:240px;
+        line-height:0.83;
+    }
+
+    .lb_type_02 .descbox.descbox_02 .lb_tit {
+        white-space:nowrap;
+        overflow:visible;
+    }
+
+    
+    
+    .lb_subtit .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+    }
+    
+    .lb_subtit .letter {
+    display: inline-block;
+    line-height: 0.83em;
+    transform-origin: 0 0;
+    }
+    
+    /* lookbook type 03*/
+    .new_lookbook .lb_type:last-child {
+        margin-bottom:0;
+    }
+    .new_lookbook .lb_type_03 .lb_inner {
+        width:100%;
+        max-width:100%;
+        margin:0 auto;
+        padding:0;
+    }
+
+    .lb_type_03 .imgbox_01 {
+        position:relative;
+        height:850px;
+    }
+
+    .lb_type_03 .imgbox_01 .img_bg {
+        position:absolute;
+        top:0;
+        left:50%;
+        width:1920px;
+        height:715px;
+        margin-left:-960px;
+        overflow:hidden;
+    }
+
+    .lb_type_03 .imgbox_01 .img_front {
+        position:absolute;
+        bottom:0;
+        left:50%;
+        width:546px;
+        margin-left:-273px;
+    }
+    
+    .lb_type_03 .descbox {
+        position:relative;
+        text-align:center;
+        color:#d31016
+    }
+
+    .lb_type_03 .descbox .lb_tit {
+        font-size:180px;
+        transform:translateY(-100%);
+        opacity:0; 
+        transition:all 0.8s ease;
+    }
+
+    .lb_type_03 .imgbox_wrap {
+        position:relative;
+        max-width:1440px;
+        margin:0 auto;
+        padding:0 100px;
+    }
+
+    .lb_type_03 .imgbox_wrap .imgbox_inner {
+        position:relative;
+        height:0;
+        padding-bottom:calc(( 455 / 1240 ) * 100%);
+    }
+
+    .lb_type_03 .imgbox_wrap .imgbox {
+        position:absolute;
+        top:0;
+        bottom:0;
+    }
+
+    .lb_type_03 .imgbox_wrap .imgbox img {
+        width:auto;
+        height:100%;
+    }
+
+    .lb_type_03 .imgbox_wrap .imgbox_02 {
+        left:0;
+    }
+
+    .lb_type_03 .imgbox_wrap .imgbox_03 {
+        right:0;
+        
+    }
+
+/* 롤링타이포시작 */
+    .rolling_typo_section {
+        display:block;
+        white-space: nowrap;
+    }
+
+    .rolling_typo .story_typo {
+        position:relative;
+        top:42px;
+        overflow:hidden;
+        white-space:nowrap;
+        animation: animate 40s linear infinite;
+        animation-delay: -40s;
+
+    }
+
+    .rolling_typo .story_typo:nth-child(2){
+        animation: animate2 40s linear infinite;
+        animation-delay: -20s;
+    }
+
+    .rolling_typo .story_typo:nth-child(3){
+        animation: animate3 40s linear infinite;
+    }
+
+
+    
+
+    @keyframes animate{
+        0%{
+            transform:translateX(100%);
+        }
+        100%{
+            transform:translateX(-100%)
+        }
+    }
+
+    @keyframes animate2{
+        0%{
+            transform:translateX(0%);
+        }
+        100%{
+            transform:translateX(-200%)
+        }
+    }
+
+    @keyframes animate3{
+        0%{
+            transform:translateX(-100.4%);
+        }
+        100%{
+            transform:translateX(-300.4%)
+        }
+    }
+
+    .rolling_typo .textbox {
+        display:inline-block;
+        font-size: 0;
+    }
+
+    .rolling_typo .textbox span {
+        font-family:'Marian',sans-serif;
+        font-size:278px;
+        font-weight:700;
+        line-height:1em;
+        letter-spacing:-0.02em;
+    }
+
+    .rolling_typo .text_stroke {
+        position:relative;
+        display:inline-block;
+        margin-right:30px;
+        vertical-align:middle;
+        color:#000;
+        text-shadow:-2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;opacity:0.27;
+        color:#ede0d6;
+    }
+
+    .rolling_typo .text_normal {
+        position:relative;
+        display:inline-block;
+        margin-right:30px;
+        vertical-align:middle;
+        text-align:left;
+        color:rgba(255,255,255,0.27);
+    }
+    
+/* 롤링타이포 끝 */
+
+    /*btn area*/
+    .lb_btnbox {
+        padding-bottom:120px;
+        text-align:right;
+    }
+
+
+    .go_lookbook {
+        position:relative;display:inline-block;padding-right:33px;font-family:'Marian',sans-serif;font-size:29px;color:#fff;opacity:0.5;
+        background-position: right -5px top 13px;
+        background-size: 27px 12px; 
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='12'%3E%3Cpath stroke='%23FFFFFF' stroke-width='2' fill='none' d='M1.38 7.346h17.381L13.725 3.44'/%3E%3C/svg%3E");
+    }
+        /* 모달 버튼 끝 */
+    /* 첫 번째 박스 끝 */
+    
+    /* 뉴 룩북 끝 */
+
+    /*------------ top 버튼------ */
+
+.btn_top{
+    position: relative;
+    text-align: right;
+}
+
+.btn_top.stop ul{
+    position: absolute !important;
+    bottom: 30px !important;
+}
+
+.btn_top ul{
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    z-index: 10;
+    display: none;
+}
+
+.btn_top .es_top img {
+    width: 40px;
+}
+/*---------- top 버튼 끝 -----*/
+
+    /* 컨테이너 끝 */
